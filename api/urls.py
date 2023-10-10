@@ -7,5 +7,6 @@ router = SimpleRouter()
 router.register('book', BookViewSet)
 
 urlpatterns = [
-    path('api/', include(router.urls))
+    path('api/', include(router.urls)),
+    path('', include('rest_framework.urls')),
 ]
